@@ -36,7 +36,7 @@ function render(language) {
   link.removeAttribute("href");
   if (href) { link.href = href; document.getElementById("status").textContent = words[12]; }
   const email = /^[a-z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-z0-9.-]+\.[a-z]{2,}$/i.test(config.contactEmail ?? "")
-    ? config.contactEmail : "donate@highor.com";
+    ? config.contactEmail : "support@highor.com";
   document.getElementById("contact").textContent = `${words[13]}: ${email}`;
   document.getElementById("contact").href = `mailto:${email}`;
 }
